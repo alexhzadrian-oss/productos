@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Rico Pan - Catálogo de productos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 750px;
+            background-color: #ffffff;
+            border: 2px solid #333;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            border-bottom: 2px solid #333;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #333;
+        }
+
+        .header-titles {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #222;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            color: #333;
+            margin-top: 4px;
+        }
+
+        .product-card {
+            padding: 25px 30px;
+            border-bottom: 2px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .product-image-container {
+            text-align: center;
+        }
+
+        .product-img {
+            width: 140px;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            border: 2px solid #333;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .footer {
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabecera -->
+        <div class="header">
+            <div class="logo-container">
+                <!-- Puedes cambiar el src por la ruta de tu imagen de logo -->
+                <img src="imagen5.jpg" alt="Rico Pan Logo" class="logo">
+            </div>
+            <div class="header-titles">
+                <span class="header-title">PANADERÍA RICO PAN</span>
+                <span class="header-subtitle">Catálogo de productos</span>
+            </div>
+        </div>
+
+        <!-- Producto 1: Pan de queso -->
+        <div class="product-card">
+            <div class="product-info">
+                <span class="product-name">Pan de queso</span>
+                <span>Descripción: Pan fresco de queso</span>
+                <span>Precio: $2.000</span>
+                <span>Estado: Disponible</span>
+            </div>
+            <div class="product-image-container">
+                <!-- Puedes cambiar el src por la ruta de la imagen del producto -->
+                <img src="imagen5-1.jpg" alt="Pan de queso" class="product-img">
+                <div>
+                    <a href="#" class="btn">Ver producto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2: Pan tradicional -->
+        <div class="product-card">
+            <div class="product-info">
+                <span class="product-name">Pan tradicional</span>
+                <span>Descripción: Pan fresco tradicional</span>
+                <span>Precio: $3.000</span>
+                <span>Estado: Disponible</span>
+            </div>
+            <div class="product-image-container">
+                <img src="imagen5-2.jpg" alt="Pan tradicional" class="product-img">
+                <div>
+                    <a href="#" class="btn">Ver producto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3: Pastel -->
+        <div class="product-card">
+            <div class="product-info">
+                <span class="product-name">Pastel</span>
+                <span>Descripción: Pastel de la casa</span>
+                <span>Precio: $15.000</span>
+                <span>Estado: Disponible</span>
+            </div>
+            <div class="product-image-container">
+                <img src="imagen5-3.jpg" alt="Pastel" class="product-img">
+                <div>
+                    <a href="#" class="btn">Ver producto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de página / Botón volver -->
+        <div class="footer">
+            <a href="#" class="btn">Volver al menú</a>
+        </div>
+    </div>
+
+</body>
+</html>
